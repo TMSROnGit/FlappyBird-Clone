@@ -1,0 +1,55 @@
+#canvas
+{
+    background-color:#ffffff;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.volume-control-container {
+    display: flex;
+    align-items: center;
+    height: 414px;
+}
+
+#volume-slider {
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 10px; 
+    -webkit-appearance: none; 
+    appearance: none; 
+    background: rgb(49, 49, 49);
+    outline: none;
+    border-radius: 5px;
+  }
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #64208b;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+
+
+#volume-slider::-moz-range-track {
+    height: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+}
